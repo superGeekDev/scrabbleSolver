@@ -9,7 +9,7 @@ Api Description:
 
 | APIs | VERB | Parameters | Description |
 | --- | --- | --- | --- |
-| /words/letters_set | GET | Set of letters, which user has provide |
+| /words | GET | (letters) | Set of letters, which user has provide |
 
 
   
