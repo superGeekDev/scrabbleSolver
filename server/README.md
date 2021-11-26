@@ -1,12 +1,15 @@
-# CodingChallenge Backend
+# Scrabble solver server
 
-A boilerplate ExpressJS project will start and will reload automatically on every saved change.
+To start the project after cloning use next commands:
+- `npm install`
+- `npm start`
 
-- Clone project
-- Create branch from `develop` in this format: `challenge-[yourname]`
-- `yarn install`
-- `yarn start`
-- Do stuff
-- Commit your changes in your branch
-- Submit the repo as zip file
+Api Description:
+## API endpoints
+
+| APIs | VERB | Parameters | Description |
+| --- | --- | --- | --- |
+| /words/letters_set | GET | Set of letters, which user has provide |
+
+
   
