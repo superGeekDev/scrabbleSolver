@@ -1,10 +1,10 @@
 const express = require('express');
-const {wordsController} = require("../controllers/words");
+const {wordsController} = require("../api/wordsGenerator/controller");
 const router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.status(200).send({ message: 'Hello World!' })
+  res.status(200).send({ message: '' })
 });
 
 router.get('/words/:letters', wordsController);
