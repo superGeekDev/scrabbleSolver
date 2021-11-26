@@ -14,7 +14,3 @@
 * Headerimage for desktop: *header.png*
 * Word list: provided as *words.json*
 * Score list for each letter: provided as *scores.json* (count refers to how often a number exists in the game and value is the actual point score for using that letter)
-
-## Contact information ##
-* Please send the result in less than six hours after the download to coding-challenge@medikura.com
-* We will take a look at your code and arrange a followup interview regarding your code
