@@ -21,9 +21,6 @@ const getWordDefinition = (word) => {
             console.log(err)
         })
     return wordInfo;
-    // console.timeEnd('handle')
-    // // console.log('dsfdsfs', wordInfo.data[0]['meanings'][0]['definitions'][0]['definition'])
-    // return wordInfo.data[0]['meanings'][0]['definitions'][0]['definition'];
 }
 
 const fillTheDescriptions = async (topWords) => {
@@ -32,7 +29,6 @@ const fillTheDescriptions = async (topWords) => {
     for (const wordInfo of topFiveWords) {
         const description = await getWordDefinition(wordInfo.word);
         topFiveWords[topFiveWords.indexOf(wordInfo)]['description'] = description;
-        // console.log(description)
     }
     return [...topFiveWords, ...words.slice(5, words.length - 1)];
 };

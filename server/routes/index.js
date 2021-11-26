@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   res.status(200).send({ message: 'Hello World!' })
 });
 
-router.post('/words', wordsController);
+router.get('/words/:letters', wordsController);
 
 
 module.exports = router;
