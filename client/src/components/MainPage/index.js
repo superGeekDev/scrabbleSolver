@@ -1,18 +1,25 @@
 import React, {useEffect, useState} from 'react'
-import {Card, CardMedia} from '@material-ui/core';
+import {CardMedia} from '@material-ui/core';
 import {makeStyles, withStyles} from '@material-ui/core/styles'
 import NavBar from "../NavBar";
 import WordsList from "../WordsList";
 import {getWords} from "../../services/api/ApiWord";
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    marging: 0,
-    padding: 0,
-    // padding: '10px',
-    height: '100%',
-  },
-}))
+        root: {
+            marging: 0,
+            padding: 0,
+            // padding: '10px',
+            height: '100%',
+        },
+        imgContainer: {
+            display: 'none',
+            ['@media (min-width:800px)']: {
+                display: 'block'
+            }
+        },
+    })
+);
 
 function MainPage ({  }) {
   const classes = useStyles()
