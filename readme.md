@@ -1,5 +1,16 @@
 # Scrabble solver challenge #
 
+
+## To start the project use commands below: ##
+Frontend:
+- Change directory to client/ and run the scripts below
+- `npm install`
+- `npm start`
+Backend:
+- Change directory to server/ and run the scripts below
+- `npm install`
+- `npm start`
+
 ## Coding challenge description ##
 * The goal is to write a digital assistant for you next game of [Scrabble](https://en.wikipedia.org/wiki/Scrabble)
 * The user provides a series of letters and the app generates valid words using a subset of those letters
