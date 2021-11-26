@@ -1,21 +1,10 @@
-import React, {useState} from 'react'
-
-import {makeStyles, withStyles} from '@material-ui/core/styles'
+import React from 'react'
+import {withStyles} from '@material-ui/core/styles'
 import {LinearProgress} from '@material-ui/core'
 import SearchBar from "material-ui-search-bar";
+import {useStyles} from "./style";
 
-const useStyles = makeStyles(theme => ({
-  searchContainer: {
-    margin: '20px 20px 0 20px',
-    color: 'black'
-  },
-  searchBar: {
-    background: '#f4c984',
-  }
-
-}))
-
-function NavBar ({ isLoading, setSearchValue }) {
+function SearchField ({ isLoading, setSearchValue }) {
   const classes = useStyles()
 
   const changeSearchValue = (value) => {
@@ -35,4 +24,4 @@ function NavBar ({ isLoading, setSearchValue }) {
   )
 }
 
-export default withStyles(useStyles)(NavBar)
+export default withStyles(useStyles)(SearchField)

@@ -1,27 +1,7 @@
 import React, {useState} from 'react'
 import { withStyles } from "@material-ui/core/styles";
-
-
-import { makeStyles } from '@material-ui/core/styles'
-import {Button, Card, CardContent, CardMedia} from '@material-ui/core'
-
-const useStyles = makeStyles(theme => ({
-  wordItem: {
-      cursor: 'pointer',
-      marginTop: '10px',
-      background: '#f2d99b',
-      padding: 0
-    // display: 'flex',
-
-  },
-  wordBox: {
-      display: 'flex',
-      flexDirection: 'raw',
-      justifyContent: 'space-between'
-      // alignItems: 'center',
-      // justifyContent: 'center',
-  }
-}))
+import {Card, CardContent} from '@material-ui/core'
+import {useStyles} from "./style";
 
 function WordBox ({ wordInfo }) {
   const classes = useStyles()

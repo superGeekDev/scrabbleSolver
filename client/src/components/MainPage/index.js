@@ -1,25 +1,9 @@
 import React, {useEffect, useState} from 'react'
-import {CardMedia} from '@material-ui/core';
 import {makeStyles, withStyles} from '@material-ui/core/styles'
-import NavBar from "../NavBar";
+import SearchField from "../SearchField";
 import WordsList from "../WordsList";
 import {getWords} from "../../services/api/ApiWord";
-
-const useStyles = makeStyles(theme => ({
-        root: {
-            marging: 0,
-            padding: 0,
-            // padding: '10px',
-            height: '100%',
-        },
-        imgContainer: {
-            display: 'none',
-            ['@media (min-width:800px)']: {
-                display: 'block'
-            }
-        },
-    })
-);
+import {useStyles} from "./style";
 
 function MainPage ({  }) {
   const classes = useStyles()
@@ -42,9 +26,14 @@ function MainPage ({  }) {
       <div className={classes.imgContainer}>
           <img style={{width: '100%', margin: '0'}} src="/header.png" alt=""/>
       </div>
-      <CardMedia image='/header.png' />
-      <NavBar isLoading={isLoading} setSearchValue={setSearchValue}/>
-      <WordsList wordsList={words}/>
+      <SearchField isLoading={isLoading} setSearchValue={setSearchValue}/>
+      <div className={classes.contentContainer}>
+        {(!words.length && !searchValue) ? (
+          <h3>Welcome to Scrabble digital resolver!</h3>
+        ) : (
+          <WordsList wordsList={words} isLoading={isLoading}/>
+        )}
+      </div>
     </div>
   )
 }

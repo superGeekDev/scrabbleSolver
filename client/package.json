@@ -26,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js src/**/*.jsx",
+    "prettier": "prettier 'src/**/*'"
   },
   "eslintConfig": {
     "extends": [
@@ -48,7 +50,11 @@
   },
   "devDependencies": {
     "audit-ci": "^3.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.27.1",
     "husky": "^6.0.0",
+    "prettier": "2.5.0",
     "prettier-standard": "^16.4.1"
   }
 }
