@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   res.status(200).send({ message: '' })
 });
 
-router.get('/words/:letters', wordsController);
+router.get('/words', wordsController);
 
 
 module.exports = router;

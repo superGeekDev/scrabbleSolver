@@ -1,7 +1,9 @@
-const BASE_API_URL = "http://localhost:8000";
+import {BASE_API_URL} from "../../constants";
+
+const baseUrl = BASE_API_URL;
 
 export function getWords (word) {
-	return fetch(`${BASE_API_URL}/words/${word}`, {method: "GET"})
+	return fetch(`${baseUrl}/words?letters=${word}`, {method: "GET"})
 		.then(res => res.json())
 		.catch(err => console.log(err));
 }
