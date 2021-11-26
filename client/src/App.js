@@ -1,11 +1,11 @@
 import React from 'react'
 
-import Dummy from './components/Dummy'
+import MainPage from './components/MainPage'
 
 function App() {
   return (
-    <div className="App">
-      <Dummy />
+    <div style={{margin: 0, padding: 0}}>
+      <MainPage />
     </div>
   );
 }
