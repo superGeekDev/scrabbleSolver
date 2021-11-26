@@ -1,6 +1,6 @@
-# Scrabble solver #
+# Scrabble solver challenge #
 
-## Task description ##
+## Coding challenge description ##
 * The goal is to write a digital assistant for you next game of [Scrabble](https://en.wikipedia.org/wiki/Scrabble)
 * The user provides a series of letters and the app generates valid words using a subset of those letters
 * Please make sure to not use the same entered letter multiple times ("eonliyl" can be rearranged into "lonely" but not "loonie" since the "o" only appears once in the scrambled letters)
