@@ -1,4 +1,5 @@
 # Scrabble solver challenge #
+The current app provides a help with playing Scrabble game. Just run the app using commands below and enjoy playing Scrabble game.
 
 
 ## To start the project use commands below: ##
